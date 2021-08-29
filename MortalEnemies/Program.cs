@@ -102,9 +102,9 @@ namespace MortalEnemies
                         string i18nRaceName = "";
                         if (patchedRace.Name != null 
                             
-                            && !<bool>patchedRace.Name?.TryLookup(Language.French, out i18nRaceName)) {
+                            && !patchedRace.Name.TryLookup(Language.French, out i18nRaceName) ?? false) {
                             
-                            i18nRaceName = patchedRace.Name.String;
+                            i18nRaceName = patchedRace.Name?.String;
                         }
                         patchedRace.Name = i18nRaceName;
                 
