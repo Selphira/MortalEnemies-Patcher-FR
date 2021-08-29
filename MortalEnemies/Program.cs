@@ -73,6 +73,9 @@ namespace MortalEnemies
                             return value.Any(y => y.Equals(race.Name.String, StringComparison.OrdinalIgnoreCase));
                         }).ToList();
                         
+                        var key = classifications.First().Key;
+                         Utils.Log($"{race.EditorID} - {key}");
+                        
                         return (race, edid: classifications.First().Key);
                     }
                     catch (InvalidOperationException)
@@ -85,10 +88,10 @@ namespace MortalEnemies
                     if (!x.edid.IsNullOrWhitespace() 
                         && config.AttackData.TryGetValue(x.edid, out var attackData))
                     {
-            Utils.Log($"{x.race.EditorID} - {x.race.Name} : FOUND");
+           // Utils.Log($"{x.race.EditorID} - {x.race.Name} : FOUND");
                         return TryGet<(IRaceGetter, AttackData)>.Succeed((x.race, attackData));
                     }
-            Utils.Log($"{x.race.EditorID} - {x.race.Name} : KO");
+           // Utils.Log($"{x.race.EditorID} - {x.race.Name} : KO");
                     return TryGet<(IRaceGetter, AttackData)>.Failure;
                 })
                 .ToList();
@@ -109,7 +112,7 @@ namespace MortalEnemies
                         }
                         */
                         //patchedRace.Name = i18nRaceName;
-            Utils.Log($"Found {patchedRace.Name} races to patch");
+           // Utils.Log($"Found {patchedRace.Name} races to patch");
                 
                 if (Math.Abs(attackData.AngleTolerance - float.MaxValue) > float.Epsilon)
                     patchedRace.AimAngleTolerance = attackData.AngleTolerance;
