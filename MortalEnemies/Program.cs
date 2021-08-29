@@ -106,7 +106,7 @@ namespace MortalEnemies
                             
                             i18nRaceName = patchedRace.Name?.String;
                         }
-                        patchedRace.Name = i18nRaceName;
+                        //patchedRace.Name = i18nRaceName;
                 
                 if (Math.Abs(attackData.AngleTolerance - float.MaxValue) > float.Epsilon)
                     patchedRace.AimAngleTolerance = attackData.AngleTolerance;
