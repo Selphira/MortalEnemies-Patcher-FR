@@ -71,9 +71,6 @@ namespace MortalEnemies
                         {
                             var (k, value) = x;
                             return value.Any(y => {
-                               // if (race.Name.Equals("Spectre de glace")) {
-                                    Utils.Log($"{k} : {y} =? {race.Name}");
-                               // }
                                 return y.Equals(race.Name.String, StringComparison.OrdinalIgnoreCase);
                             });
                         }).ToList();
@@ -93,10 +90,9 @@ namespace MortalEnemies
                     if (!x.edid.IsNullOrWhitespace() 
                         && config.AttackData.TryGetValue(x.edid, out var attackData))
                     {
-           // Utils.Log($"{x.race.EditorID} - {x.race.Name} : FOUND");
                         return TryGet<(IRaceGetter, AttackData)>.Succeed((x.race, attackData));
                     }
-           // Utils.Log($"{x.race.EditorID} - {x.race.Name} : KO");
+            Utils.Log($"{x.race.EditorID} - {x.race.Name} : KO");
                     return TryGet<(IRaceGetter, AttackData)>.Failure;
                 })
                 .ToList();
@@ -107,17 +103,6 @@ namespace MortalEnemies
                 var (race, attackData) = tuple;
 
                 var patchedRace = state.PatchMod.Races.GetOrAddAsOverride(race);
-                
-                /*
-                string i18nRaceName = "";
-                var lookedUp = patchedRace.Name?.TryLookup(Language.French, out i18nRaceName) ?? false;
-                
-                        if (lookedUp == null || !lookedUp) {
-                            i18nRaceName = patchedRace.Name?.String;
-                        }
-                        */
-                        //patchedRace.Name = i18nRaceName;
-           // Utils.Log($"Found {patchedRace.Name} races to patch");
                 
                 if (Math.Abs(attackData.AngleTolerance - float.MaxValue) > float.Epsilon)
                     patchedRace.AimAngleTolerance = attackData.AngleTolerance;
