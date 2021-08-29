@@ -82,11 +82,13 @@ namespace MortalEnemies
                 })
                 .SelectWhere(x =>
                 {
+            Utils.Log($"Found {x.edid} races to patch");
                     if (!x.edid.IsNullOrWhitespace() 
                         && config.AttackData.TryGetValue(x.edid, out var attackData))
                     {
                         return TryGet<(IRaceGetter, AttackData)>.Succeed((x.race, attackData));
                     }
+            Utils.Log($"-- RIEN");
                     return TryGet<(IRaceGetter, AttackData)>.Failure;
                 })
                 .ToList();
