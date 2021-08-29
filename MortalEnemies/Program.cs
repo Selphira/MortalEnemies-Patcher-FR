@@ -85,10 +85,10 @@ namespace MortalEnemies
                     if (!x.edid.IsNullOrWhitespace() 
                         && config.AttackData.TryGetValue(x.edid, out var attackData))
                     {
-            Utils.Log($"{x.race.EditorID} : FOUND");
+            Utils.Log($"{x.race.EditorID} - {x.race.Name} : FOUND");
                         return TryGet<(IRaceGetter, AttackData)>.Succeed((x.race, attackData));
                     }
-            Utils.Log($"{x.race.EditorID} : KO");
+            Utils.Log($"{x.race.EditorID} - {x.race.Name} : KO");
                     return TryGet<(IRaceGetter, AttackData)>.Failure;
                 })
                 .ToList();
