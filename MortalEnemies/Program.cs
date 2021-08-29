@@ -70,7 +70,12 @@ namespace MortalEnemies
                         classifications = config.Classifications.Where(x =>
                         {
                             var (_, value) = x;
-                            return value.Any(y => y.Equals(race.Name.String, StringComparison.OrdinalIgnoreCase));
+                            return value.Any(y => {
+                                if (race.Name.Equals("Spectre de glace")) {
+                                    Utils.Log($"{y}");
+                                }
+                                y.Equals(race.Name.String, StringComparison.OrdinalIgnoreCase);
+                            });
                         }).ToList();
                         
                         var key = classifications.First().Key;
