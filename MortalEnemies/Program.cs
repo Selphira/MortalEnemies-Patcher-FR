@@ -72,7 +72,7 @@ namespace MortalEnemies
                             var (_, value) = x;
                             return value.Any(y => {
                                // if (race.Name.Equals("Spectre de glace")) {
-                                    Utils.Log($"{y}");
+                                    Utils.Log($"{y} =? {race.Name}");
                                // }
                                 return y.Equals(race.Name.String, StringComparison.OrdinalIgnoreCase);
                             });
