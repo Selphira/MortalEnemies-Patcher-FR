@@ -100,7 +100,7 @@ namespace MortalEnemies
                 
                 
                 string i18nRaceName = "";
-                var lookedUp = patchedRace.Name?.TryLookup(Language.French, out i18nRaceName);
+                var lookedUp = patchedRace.Name?.TryLookup(Language.French, out i18nRaceName) ?? false;
                 
                         if (lookedUp == null || !lookedUp) {
                             i18nRaceName = patchedRace.Name?.String;
