@@ -57,12 +57,6 @@ namespace MortalEnemies
                 {
                     try
                     {
-                        string i18nRaceName = "";
-                        if (!race.Name.TryLookup(Language.French, out i18nRaceName)) {
-                            //Console.WriteLine($"{book.FormKey}: Pas de traduction pour: {book.Name.String}");
-                            i18nRaceName = race.Name.String;
-                        }
-                        race.Name = i18nRaceName;
                         List<KeyValuePair<string, List<string>>> classifications = config.Classifications
                             .Where(x => x.Key.Equals(race.EditorID!, StringComparison.OrdinalIgnoreCase))
                             .ToList();
@@ -103,6 +97,13 @@ namespace MortalEnemies
                 var (race, attackData) = tuple;
 
                 var patchedRace = state.PatchMod.Races.GetOrAddAsOverride(race);
+                
+                
+                        string i18nRaceName = "";
+                        if (!patchedRace.Name.TryLookup(Language.French, out i18nRaceName)) {
+                            i18nRaceName = patchedRace.Name.String;
+                        }
+                        patchedRace.Name = i18nRaceName;
                 
                 if (Math.Abs(attackData.AngleTolerance - float.MaxValue) > float.Epsilon)
                     patchedRace.AimAngleTolerance = attackData.AngleTolerance;
