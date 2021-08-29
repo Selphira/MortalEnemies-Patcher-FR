@@ -1,11 +1,11 @@
 {
   "classifications":{
     "UndeadDragonRace":[
-      "Dragon Race",
-      "Mechanical Dragon Race"
+      "Dragon",
+      "Dragon mécanique"
     ],
     "WhiteStagRace":[
-      "Deer"
+      "Biche"
     ],
     "DraugrMagicRace":[
       "Draugr",
@@ -15,61 +15,61 @@
       "Spriggan"
     ],
     "SkeletonNecroRace":[
-      "Skeleton",
+      "Squelette",
       "Draman Skeleton",
 	  "Draman"
     ],
     "WispShadeRace":[
-      "Wisp"
+      "Feu follet"
     ],
     "MagicAnomalyRace":[
-      "Essence of Magicka"
+      "Essence de magie"
     ],
     "WerewolfBeastRace":[
-      "Werewolf",
+      "Loup-garou",
       "Daedroth"
     ],
     "SkeeverWhiteRace":[
-      "Skeever"
+      "Ragnard"
     ],
     "RigidSkeletonRace":[
-      "Skeleton"
+      "Squelette"
     ],
     "MudcrabRace":[
-      "MudCrab"
+      "Vasard"
     ],
     "SkeletonRace":[
-      "Skeleton",
+      "Squelette",
       "Beast Skeleton"
     ],
     "ChaurusReaperRace":[
       "Chaurus"
     ],
     "SprigganSwarmRace":[
-      "Witchlight"
+      "Lucereine"
     ],
     "SwarmRace":[
-      "Witchlight"
+      "Lucereine"
     ],
     "FrostbiteSpiderRaceLarge":[
-      "Frostbite Spider"
+      "Givrépeire"
     ],
     "FrostbiteSpiderRaceGiant":[
-      "Frostbite Spider"
+      "Givrépeire"
     ],
     "WolfRace":[
-      "Wolf",
+      "Loup",
 	  "Spirit Wolf"
     ],
     "WitchlightRace":[
-      "Witchlight"
+      "Lucereine"
     ],
     "WispRace":[
-      "Wisp",
+      "Feu follet",
 	  "Blighted Wisp"
     ],
     "TrollFrostRace":[
-      "Snow Troll"
+      "Troll des neiges"
     ],
     "TrollRace":[
       "Troll",
@@ -79,120 +79,120 @@
       "Spriggan"
     ],
     "SlaughterfishRace":[
-      "Slaughterfish"
+      "Poisson carnassier"
     ],
     "SabreCatSnowyRace":[
-      "Snowy Sabre Cat",
+      "Smilodon des neiges",
 	  "Spirit Sabre Cat"
     ],
     "SkeeverRace":[
-      "Skeever",
+      "Ragnard",
 	  "Spirit Skeever"
     ],
     "SabreCatRace":[
-      "Sabre Cat"
+      "Smilodon"
     ],
     "MammothRace":[
-      "Mammoth"
+      "Mammouth"
     ],
     "IceWraithRace":[
-      "Ice Wraith",
+      "Spectre de glace",
       "Soul Wraith"
     ],
     "HorseRace":[
-      "Horse"
+      "Cheval"
     ],
     "HorkerRace":[
-      "Horker"
+      "Horqueur"
     ],
     "HagravenRace":[
-      "Hagraven"
+      "Harfreuse"
     ],
     "GiantRace":[
-      "Giant",
+      "Géant",
       "Ogre"
     ],
     "FrostbiteSpiderRace":[
-      "Frostbite Spider"
+      "Givrépeire"
     ],
     "AtronachStormRace":[
-      "Storm Atronach",
+      "Atronach de foudre",
       "Ore Guardian",
       "Stahlrim Guardian",
-	  "Bone Atronach"
+	  "Atronach d'os"
     ],
     "AtronachFrostRace":[
-      "Frost Atronach"
+      "Atronach de glace"
     ],
     "AtronachFlameRace":[
-      "Flame Atronach",
+      "Atronach de feu",
 	  "Blue Flame Atronach"
     ],
     "FalmerRace":[
       "Falmer",
-      "Goblin"
+      "Gobelin"
     ],
     "DwarvenSpiderRace":[
-      "Dwarven Spider"
+      "Araignée dwemer"
     ],
     "DwarvenSphereRace":[
-      "Dwarven Sphere"
+      "Sphère dwemer"
     ],
     "DwarvenCenturionRace":[
-      "Dwarven Centurion"
+      "Centurion dwemer"
     ],
     "DragonPriestRace":[
-      "Dragon Priest"
+      "Prêtre-dragon"
     ],
     "DogRace":[
-      "Dog"
+      "Chien"
     ],
     "ChaurusRace":[
       "Chaurus"
     ],
     "BearSnowRace":[
-      "Snow Bear",
+      "Ours des neiges",
 	  "Spirit Bear"
     ],
     "BearBlackRace":[
-      "Cave Bear"
+      "Ours troglodyte"
     ],
     "BearBrownRace":[
-      "Bear"
+      "Ours"
     ],
     "DragonRace":[
-      "Dragon Race"
+      "Dragon"
     ],
     "DraugrRace":[
       "Draugr",
       "Armored Skeleton"
     ],
     "DLC1HuskyBareCompanionRace":[
-      "Dog"
+      "Chien"
     ],
     "DLC1GargoyleVariantBossRace":[
-      "Gargoyle"
+      "Gargouille"
     ],
     "DLC1DeathHoundCompanionRace":[
-      "Deathhound"
+      "Chien de guerre"
     ],
     "DLC1HuskyArmoredCompanionRace":[
-      "Dog"
+      "Chien"
     ],
     "FalmerFrozenVampRace":[
       "Falmer"
     ],
     "DLC1BlackSkeletonRace":[
-      "Skeleton"
+      "Squelette"
     ],
     "DLC1GargoyleVariantGreenRace":[
-      "Gargoyle"
+      "Gargouille"
     ],
     "DLC1HuskyBareRace":[
-      "Dog"
+      "Chien"
     ],
     "DLC1HuskyArmoredRace":[
-      "Dog"
+      "Chien"
     ],
     "DLC1_BF_ChaurusRace":[
       "Chaurus"
@@ -204,22 +204,22 @@
       "Troll"
     ],
     "DLC1TrollFrostRaceArmored":[
-      "Snow Troll"
+      "Troll des neiges"
     ],
     "DLC1UndeadDragonRace":[
-      "Dragon Race"
+      "Dragon"
     ],
     "DLC1SabreCatGlowRace":[
-      "Sabre Cat"
+      "Smilodon"
     ],
     "DLC1DeathHoundRace":[
-      "Dog"
+      "Chien"
     ],
     "DLC01SoulCairnBonemanRace":[
-      "Skeleton"
+      "Squelette"
     ],
     "DLC1GargoyleRace":[
-      "Gargoyle",
+      "Gargouille",
       "Draman Brute",
       "Frost Brute"
     ],
@@ -230,7 +230,7 @@
       "Draugr"
     ],
     "DLC1SoulCairnSkeletonNecroRace":[
-      "Skeleton"
+      "Squelette"
     ],
     "DLC1ChaurusHunterRace":[
       "Chaurusflyer",
@@ -240,43 +240,43 @@
       "Draugr"
     ],
     "DLC2AcolyteDragonPriestRace":[
-      "Dragon Priest"
+      "Prêtre-dragon"
     ],
     "DLC2DragonBlackRace":[
-      "Dragon Race"
+      "Dragon"
     ],
     "DragonBlackRace":[
-      "Dragon Race"
+      "Dragon"
     ],
     "DLC2DwarvenBallistaRace":[
-      "Dwarven Sphere"
+      "Sphère dwemer"
     ],
     "DLC2HulkingDraugrRace":[
       "Draugr"
     ],
     "DLC2dunInstrumentsRace":[
-      "Witchlight"
+      "Lucereine"
     ],
     "DLC2dunKarstaagIceWraithRace":[
-      "Ice Wraith"
+      "Spectre de glace"
     ],
     "dlc2AshGuardianRace":[
-      "Storm Atronach"
+      "Atronach de foudre"
     ],
     "DLC2ExpSpiderPackmuleRace":[
-      "Frostbite Spider"
+      "Givrépeire"
     ],
     "DLC2WerebearBeastRace":[
-      "Werewolf"
+      "Loup-garou"
     ],
     "DLC2GhostFrostGiantRace":[
-      "Ghost Giant"
+      "Géant fantôme"
     ],
     "DLC2AshHopperRace":[
       "Scrib"
     ],
     "DLC2MudcrabSolstheimRace":[
-      "MudCrab"
+      "Vasard"
     ],
     "DLC2SprigganBurntRace":[
       "Spriggan"
@@ -285,10 +285,10 @@
       "Draugr"
     ],
     "DLC2LurkerRace":[
-      "Lurker"
+      "Rôdeur"
     ],
     "DLC2ExpSpiderBaseRace":[
-      "Frostbite Spider"
+      "Givrépeire"
     ]
   },
   "attackData":{
