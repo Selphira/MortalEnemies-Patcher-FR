@@ -76,7 +76,6 @@ namespace MortalEnemies
                         }).ToList();
                         
                         var key = classifications.First().Key;
-                         Utils.Log($"{race.EditorID} - {race.Name} - {key}");
                         
                         return (race, edid: classifications.First().Key);
                     }
