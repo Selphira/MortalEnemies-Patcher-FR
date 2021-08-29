@@ -56,6 +56,11 @@ namespace MortalEnemies
                 {
                     try
                     {
+                        if (!race.Name.TryLookup(Language.French, out i18nRaceName)) {
+                            //Console.WriteLine($"{book.FormKey}: Pas de traduction pour: {book.Name.String}");
+                            i18nRaceName = race.Name.String;
+                        }
+                        race.Name = i18nRaceName;
                         List<KeyValuePair<string, List<string>>> classifications = config.Classifications
                             .Where(x => x.Key.Equals(race.EditorID!, StringComparison.OrdinalIgnoreCase))
                             .ToList();
