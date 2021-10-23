@@ -103,7 +103,7 @@ namespace MortalEnemies
 
                 var patchedRace = state.PatchMod.Races.GetOrAddAsOverride(race);
                 
-                if (patchedRace.Name?.TryLookup(Language.French, out string i18nRaceName)) {
+                if (patchedRace.Name?.TryLookup(Language.French, out string i18nRaceName) != null) {
                     patchedRace.Name = i18nRaceName;
                 }
                 
