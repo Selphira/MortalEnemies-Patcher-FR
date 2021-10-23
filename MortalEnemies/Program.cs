@@ -103,6 +103,10 @@ namespace MortalEnemies
 
                 var patchedRace = state.PatchMod.Races.GetOrAddAsOverride(race);
                 
+                if (patchedRace.Name != null && patchedRace.Name.TryLookup(Language.French, out string i18nRaceName)) {
+                    patchedRace.Name = i18nRaceName;
+                }
+                
                 if (Math.Abs(attackData.AngleTolerance - float.MaxValue) > float.Epsilon)
                     patchedRace.AimAngleTolerance = attackData.AngleTolerance;
                 if (Math.Abs(attackData.AngularAcceleration - float.MaxValue) > float.Epsilon)
